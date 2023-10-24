@@ -35,9 +35,12 @@ const App = () => {
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
        if (vowelsArray[0] === eachWord[0]) {
+      return eachWord + "way"   
 
-      return eachWord + "way"
-       } else {return eachWord}
+    } else if (eachWord[0] === "q" && eachWord[1] === "u") {
+      return eachWord.split("").slice(2).join("") + "qu"
+    }
+    else {return eachWord}
 
     })
 
